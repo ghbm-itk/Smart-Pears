@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart_pears"
+version = "0.0.1"
+authors = [
+  { name="ghbm-itk" },
+]
+description = "A web application for controlling Ledvance lightbulbs on a local network."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+dependencies = [
+    "nicegui == 2.3.0",
+    "tinytuya == 1.15.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ghbm-itk/Smart-Pears"
+"Bug Tracker" = "https://github.com/ghbm-itk/Smart-Pears/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pylint",
+  "flake8"
+]
